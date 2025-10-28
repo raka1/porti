@@ -1,0 +1,129 @@
+@import './base.css';
+
+/* Remove default focus styles */
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  border: none;
+}
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: var(--color-primary-light) !important;
+}
+.btn-icon {
+  border: none;
+}
+
+/* Links */
+.link {
+  color: var(--color-primary);
+  text-decoration: underline;
+  transition: color 0.15s;
+}
+
+.link:hover {
+  color: var(--color-primary-light);
+}
+
+/* Section Headers */
+.section-header {
+  color: var(--color-primary);
+}
+
+.section-subheader {
+  color: var(--color-primary-light);
+}
+
+/* Cards */
+.box-shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.box-shadow:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Scroll */
+
+::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-border-clickable);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-gray);
+}
+
+/* Bootstrap custom */
+.tooltip-inner {
+  background-color: var(--color-text);
+  color: var(--color-background);
+}
+
+.tooltip[data-popper-placement^='top'] .tooltip-arrow::before {
+  border-top-color: var(--color-text);
+}
+
+.tooltip[data-popper-placement^='bottom'] .tooltip-arrow::before {
+  border-bottom-color: var(--color-text);
+}
+
+.tooltip[data-popper-placement^='left'] .tooltip-arrow::before {
+  border-left-color: var(--color-text);
+}
+
+.tooltip[data-popper-placement^='right'] .tooltip-arrow::before {
+  border-right-color: var(--color-text);
+}
+
+/* Modal */
+
+.modal-content {
+  color: var(--color-text);
+  background: var(--color-background);
+}
+
+.modal-content .btn-close {
+  background: transparent;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+
+.modal-content .btn-close:hover {
+  opacity: 1;
+}
+
+.modal-content .modal-header {
+  border-color: var(--color-border);
+}
+
+.modal-content {
+  border-color: var(--color-border);
+}
+
+/* List Group */
+
+.list-group-item {
+  background: var(--color-background);
+  color: var(--color-text);
+  border-color: var(--color-border);
+}

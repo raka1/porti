@@ -7,13 +7,15 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
   process.env = loadEnv(mode, process.cwd())
-  const prox = {
+
+  const apiProxyConfig = {
     target: process.env.VITE_API_URL,
     changeOrigin: true,
     secure: false,
     headers: {
       'Access-Control-Allow-Origin': '*',
     },
+    rewrite: (path: string) => path.replace(/^\/api/, ''),
   }
 
   return {
@@ -25,9 +27,7 @@ export default defineConfig(({ mode }) => {
     },
     server: {
       proxy: {
-        '/api/message/send': prox,
-        '/api/projects/get': prox,
-        '/api/skills/get': prox,
+        '/api': apiProxyConfig,
       },
     },
   }

@@ -37,7 +37,7 @@ onMounted(() => {
     <h2 class="section-header mb-4">About Me</h2>
     <section class="about-me">
       <div class="text-center">
-        <img src="/monitor.png" alt="Monitor" style="max-height: 10rem" />
+        <img src="/images/monitor.png" alt="Monitor" style="max-height: 10rem" />
       </div>
       <p>
         I’m a <b>Full Stack Developer</b> who enjoys turning complex problems into clean,

@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="hero">
-      <img src="/hero.png" alt="Hero" class="profile-photo" />
+      <img src="/images/hero.png" alt="Hero" class="profile-photo" />
       <h1>Hi, I'm Raka</h1>
       <p>Bringing ideas to life through clean design and powerful code</p>
       <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#downloadModal">
@@ -28,8 +28,8 @@
         </div>
         <div class="modal-body">
           <ul>
-            <li><a href="/cv_en.pdf" download>English</a></li>
-            <li><a href="/cv_id.pdf" download>Indonesian</a></li>
+            <li><a href="/docs/cv_en.pdf" download>English</a></li>
+            <li><a href="/docs/cv_id.pdf" download>Indonesian</a></li>
           </ul>
         </div>
       </div>

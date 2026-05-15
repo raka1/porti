@@ -85,7 +85,9 @@ async function validateForm(event: Event) {
             </div>
             <div class="mb-3">
               <i class="pi pi-map-marker"></i>
-              <div>35 Jalan Mampang Prapatan X, Tegal Parang, South Jakarta</div>
+              <div>
+                267 Jalan Raya Panggung Gg. Hj. Asmar RT.006/003, Jatibening, Bekasi, Indonesia
+              </div>
             </div>
           </div>
         </div>
